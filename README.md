@@ -3,11 +3,13 @@
 
 Este repositorio contiene implementaciones de clases para simular un juego de batalla naval.
 
-## Autores
+## Desarrolladores
 
-Leonel Cledon
-Marcelo Nelson
-Emanuel Boz
+  | Email | Autor |
+  |-------|--------|
+  2320801@ucc.edu.ar | Leonel |
+  2306768@ucc.edu.ar | Emanuel|
+  2318524@ucc.edu.ar | Marcelo |
 
 ## Clases Principales
 
