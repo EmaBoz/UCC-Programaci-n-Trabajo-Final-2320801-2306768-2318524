@@ -1,7 +1,13 @@
 
-## Descripción del Repositorio
+## Batalla Naval
 
 Este repositorio contiene implementaciones de clases para simular un juego de batalla naval.
+
+## Autores
+
+Leonel Cledon
+Marcelo Nelson
+Emanuel Boz
 
 ## Clases Principales
 
