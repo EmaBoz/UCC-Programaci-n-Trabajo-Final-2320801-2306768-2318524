@@ -38,6 +38,16 @@ Emanuel Boz
      - No se especifican atributos en el archivo proporcionado.
    - Métodos Públicos (firma):
      - `Game()`: Constructor
+6. **Destroyer**:
+   - Atributos:
+     - No se especifican atributos en el archivo proporcionado.
+   - Métodos Públicos (firma):
+     - `Destroyer()`: Constructor
+7. **Board**:
+   - Atributos:
+     - No se especifican atributos en el archivo proporcionado.
+   - Métodos Públicos (firma):
+     - `Board()`: Constructor
 
 ## Estrategia de Uso de Archivos
 
