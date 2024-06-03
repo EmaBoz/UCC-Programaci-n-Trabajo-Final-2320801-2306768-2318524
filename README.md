@@ -48,6 +48,11 @@ Emanuel Boz
      - No se especifican atributos en el archivo proporcionado.
    - Métodos Públicos (firma):
      - `Board()`: Constructor
+8. **Menu**:
+   - Atributos:
+     - No se especifican atributos en el archivo proporcionado.
+   - Métodos Públicos (firma):
+     - `Menu()`: Constructor
 
 ## Estrategia de Uso de Archivos
 
@@ -89,8 +94,3 @@ Los datos se guardarán en formato de texto plano, separando cada atributo o val
 Para serializar datos no basados en strings, se utilizarán las siguientes funciones:
 - Para convertir un número a std::string: `std::to_string(numero)`
 - Para convertir un std::string a un número: `std::stoi(string)`
-
-Esto garantizará que los datos se guarden y carguen correctamente en los archivos de texto.
-
-Recuerda que el uso de archivos es fundamental para persistir el estado del juego y administrar los datos entre sesiones de ejecución.
-```
