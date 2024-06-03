@@ -7,9 +7,9 @@ Este repositorio contiene implementaciones de clases para simular un juego de ba
 
   | Email | Autor |
   |-------|--------|
-  2320801@ucc.edu.ar | Leonel |
-  2306768@ucc.edu.ar | Emanuel|
-  2318524@ucc.edu.ar | Marcelo |
+  2320801@ucc.edu.ar | Leonel Cledon |
+  2306768@ucc.edu.ar | Emanuel Boz|
+  2318524@ucc.edu.ar | Marcelo Nelson|
 
 ## Clases Principales
 
