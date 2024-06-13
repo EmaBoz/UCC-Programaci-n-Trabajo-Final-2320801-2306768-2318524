@@ -8,7 +8,6 @@
 #include "Board.h"
 #include "Destroyer.h"
 #include "Battleship.h"
-
 Game::Game(const char* player1Name, const char* player2Name) : player1(player1Name), player2(player2Name), turn(1), gameOver(false) {
     initialiseFleet(fleetPlayer1);
     initialiseFleet(fleetPlayer2);
@@ -41,7 +40,16 @@ void Game::play() {
     }
     std::cout << "Game Over!" << std::endl;
 }
-
+void Game::placeShips(Board& board, std::vector<Ship*>& fleet) {
+    for (Ship* ship : fleet) {
+        int row, column;
+        std::cout << "Enter row and column to place " << ship->getLength() << "-unit ship: ";
+        std::cin >> row >> column;
+        for (int i = 0; i < ship->getLength(); ++i) {
+            board.setPosition(row, column + i, 'S');
+        }
+    }
+}
 void Game::saveRanking(const char* file) const {
     std::ofstream fout(file);
     if (!fout) {
@@ -55,7 +63,7 @@ void Game::saveRanking(const char* file) const {
     std::cout << "Ranking saved successfully." << std::endl;
 }
 
-void Game::initialiseFleet(std::vector<Ship*>& fleet) {
+void Game::initialiseFleet(std::vector<Ship*>& fleet){
     fleet.push_back(new AircraftCarrier());
     fleet.push_back(new Battleship());
     fleet.push_back(new Battleship());
@@ -67,7 +75,6 @@ void Game::initialiseFleet(std::vector<Ship*>& fleet) {
     fleet.push_back(new Destroyer());
     fleet.push_back(new Destroyer());
 }
-
 void Game::playerTurn(Board& enemyBoard, std::vector<Ship*>& enemyFleet) {
     char coordinate[3];
     std::cout << "Enter coordinate to shoot (e.g., A1): ";
