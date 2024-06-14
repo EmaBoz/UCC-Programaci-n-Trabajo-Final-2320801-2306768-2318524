@@ -18,6 +18,7 @@ private:
     std::vector<std::pair<std::string, int>> ranking;
 
 public:
+    void clearScreen();
     Board player1Board;
     Board player2Board;
     std::vector<Ship*> fleetPlayer1;
@@ -28,7 +29,6 @@ public:
     bool isGameWon() const;
     void placeShips(Board& board, std::vector<Ship*>& fleet);
     void saveRanking(const char* file) ;
-private:
     void initialiseFleet(std::vector<Ship*>& fleet);
     void playerTurn(Board& enemyBoard, std::vector<Ship*>& enemyFleet);
     void switchTurn();
